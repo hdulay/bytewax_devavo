@@ -1,0 +1,7 @@
+confluent_kafka
+bytewax
+river
+paho-mqtt
+sseclient-py
+sseclient
+urllib3

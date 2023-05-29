@@ -1,0 +1,39 @@
+{
+    "$schema": "/mediawiki/recentchange/1.0.0",
+    "meta": {
+        "uri": "https: //commons.wikimedia.org/wiki/File:428_Shrine_Mont_Tour_(10062086196).jpg",
+        "request_id": "a305a99a-cd0c-4a15-adb3-0168940b1743",
+        "id": "b725c154-7615-43bf-b31b-5338921657a7",
+        "dt": "2023-05-29T04:12:40Z",
+        "domain": "commons.wikimedia.org",
+        "stream": "mediawiki.recentchange",
+        "topic": "eqiad.mediawiki.recentchange",
+        "partition": 0,
+        "offset": 4662840603
+    },
+    "id": 2205449266,
+    "type": "edit",
+    "namespace": 6,
+    "title": "File:428 Shrine Mont Tour (10062086196).jpg",
+    "title_url": "https://commons.wikimedia.org/wiki/File:428_Shrine_Mont_Tour_(10062086196).jpg",
+    "comment": "/* wbeditentity-update:0| */ automatically adding [[Commons:Structured data|structured data]] based on file information: meta",
+    "timestamp": 1685333560,
+    "user": "SchlurcherBot",
+    "bot": true,
+    "notify_url": "https://commons.wikimedia.org/w/index.php?diff=768196531&oldid=495827017&rcid=2205449266",
+    "minor": false,
+    "patrolled": true,
+    "length": {
+        "old": 4640,
+        "new": 7016
+    },
+    "revision": {
+        "old": 495827017,
+        "new": 768196531
+    },
+    "server_url": "https://commons.wikimedia.org",
+    "server_name": "commons.wikimedia.org",
+    "server_script_path": "/w",
+    "wiki": "commonswiki",
+    "parsedcomment": "html code here"
+}
