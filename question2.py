@@ -131,10 +131,13 @@ def format(event__mal):
         f"{key} updated {count} pages in {delta} seconds {'and is malicious!!!!' if mal else ''}"
     )
 
-def f(event):
+def filter_events(event):
+    '''
+    Filter for only change events that are greater than 1
+    '''
     return len(event[1]) > 1
 
-flow.filter(f)
+flow.filter(filter_events)
 flow.map(is_malicious)
 flow.map(format)
 flow.output("out", StdOutput())
