@@ -101,7 +101,7 @@ cc = EventClockConfig(get_event_time, wait_for_system_duration=timedelta(seconds
 align_to = datetime(2023, 1, 1, tzinfo=timezone.utc)
 wc = TumblingWindow(align_to=align_to, length=timedelta(seconds=5))
 
-flow.fold_window("running_average", cc, wc, list, acc_values)
+flow.fold_window("running_count", cc, wc, list, acc_values)
 
 
 def is_malicious(event):
