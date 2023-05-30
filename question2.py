@@ -68,12 +68,10 @@ flow = Dataflow()
 flow.input("inp", WikiStreamInput())
 flow.map(json.loads)
 
-# Divide the readings by sensor type, so that we only
-# aggregate readings of the same type.
-def extract_sensor_type(event):
+def extract_user(event):
     return event['user'], event
 
-flow.map(extract_sensor_type)
+flow.map(extract_user)
 
 # Here is where we use the event time processing, with
 # the fold_window operator.
