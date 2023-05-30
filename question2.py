@@ -107,6 +107,11 @@ flow.fold_window("running_average", cc, wc, list, acc_values)
 
 
 def is_malicious(event):
+    '''
+    This checks to see if the pages updated per second exceeds 10pages/sec.
+    If it does, the bot is considered malicious and returns a tuple of the
+    event and is_malicious.
+    '''
     key, data = event
     dates = [datetime.fromtimestamp(x[1]) for x in data]
     delta = max(dates) - min(dates)
